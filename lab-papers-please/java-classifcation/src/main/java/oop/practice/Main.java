@@ -181,8 +181,8 @@ public class Main {
   private static void analyzeTextFile(String[] args) {
 
     if (args.length == 0) {
-      System.out.println("No file paths provided.");
-      return;
+      System.out.println("No file paths provided. Using default path for analysis.");
+      args = new String[]{"C:\\Users\\Intel\\OneDrive\\Desktop\\OOP lab\\lab-papers-please\\java-classifcation\\src\\main\\java\\oop\\practice\\text.txt"};
     }
 
     for (String filePath : args) {
@@ -221,8 +221,8 @@ public class Main {
   private static void analyzeMultipleTextFiles( String[] args) {
 
     if (args.length == 0) {
-      System.out.println("No file paths provided. Please provide file paths as command-line arguments.");
-      return;
+      System.out.println("No file paths provided. Using default paths for analysis.");
+      args = new String[]{"C:\\Users\\Intel\\OneDrive\\Desktop\\OOP lab\\lab-papers-please\\java-classifcation\\src\\main\\java\\oop\\practice\\text2.txt"};
     }
 
     for (String filePath : args) {
