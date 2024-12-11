@@ -9,8 +9,15 @@
         <module name="java-classifcation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="kotlin-classification" target="21" />
+    <bytecodeTargetLevel target="23">
+      <module name="kotlin-classification" target="23" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="--enable-preview" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="java-classifcation" options="" />
+    </option>
   </component>
 </project>
